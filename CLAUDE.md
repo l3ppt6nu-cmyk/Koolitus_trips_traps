@@ -13,8 +13,8 @@ Kontrolli alati tegelikke faile; ära eelda valmis koodi, raamistikku ega testik
 - Testide käivitamine: puudub (kavas `node --test`).
 
 ## Rollid
-- Kasutaja kirjeldab eesmärgi, vaatab muudatused üle ja ühendab PR-id. Vajadusel muudab ta koodi tahvlis ise (`github.dev` või GitHubi rakendus).
-- Claude Code kirjutab koodi ja testid, käivitab kontrollid ja haldab Giti.
+- Kasutaja kirjeldab eesmärki, vaatab muudatused üle ja ühendab PR-id. Vajadusel muudab ta koodi tahvlis ise (`github.dev` või GitHubi rakendus).
+- Claude Code kirjutab koodi ja teste, käivitab kontrollid ja haldab Giti.
 - ChatGPT aitab ülesandeid sõnastada ja teeb vajadusel sõltumatu koodikontrolli GitHubis.
 
 ## Keel ja suhtlus
@@ -35,7 +35,7 @@ Vaikimisi valik, kuni kasutaja otsustab teisiti:
 - Väikese ja selge muudatuse tee kohe. Suure või riskantse muudatuse puhul esita enne lühike plaan ja oota kinnitust.
 - Tööta sessiooni tööharus või kasutaja nimetatud harus. Ära push'i `main`-harusse ega ühenda PR-e – seda teeb kasutaja.
 - Kui kasutaja palub erandkorras töötada otse `main`-harus, küsi luba enne iga commit'i.
-- Üks commit = üks loogiline muudatus; sõnum eesti keeles, nt „Lisa võidu tuvastamine".
+- Üks commit = üks loogiline muudatus; sõnum eesti keeles, nt „Lisa võidu tuvastamine“.
 - Kui töö on valmis ja kontrollitud, loo PR `main`-harusse, kui kasutaja pole palunud teisiti.
 - Kasutaja võib samal harul ise muudatusi teha. Kui kaugharus on uusi commit'e, too need enne oma muudatusi sisse; konflikti korral peatu ja küsi juhiseid.
 - Ära kirjuta üle kasutaja pooleliolevat tööd. Ära tee hävitavaid Giti toiminguid (nt force-push, `git reset --hard`) ega kustuta harusid. Faile kustuta ainult siis, kui ülesanne seda nõuab, ja nimeta need aruandes.
